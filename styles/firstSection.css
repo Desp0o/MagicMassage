@@ -1,0 +1,281 @@
+/* მთავარი სექცია */
+.FirstSection{
+    width: 100%;
+    padding-top: 106px;
+}
+.mainSection{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 609px;
+    padding: 63px 82px 34px 100px;
+}
+
+.mainSection_header{
+    position: relative;
+    width: fit-content;
+}
+
+.mainSection_header p{
+    width: 911px;
+    height: 57px;
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 55px;
+    stroke: 1px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: #11346F;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#magic{
+    font-weight: 900;
+    color: #197AFF;
+    font-family: 'Gilroy';
+}
+
+#underline{
+    position: absolute;
+    right: 0;
+    bottom: -3  px;
+}
+
+#curvedArrow{
+    position: absolute;
+    top: 0;
+    right: -85px;
+}
+
+.mainSection_paragraph{
+    margin-top: 25px;
+    width: 731px;
+    height: 67px;
+
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+
+    color: #262626;
+}
+
+
+/* მასაჟის ბოქსი */
+.massageBox{
+    width: 686px;
+    height: 152px;
+
+    margin-top: 26px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    background: rgba(174, 204, 255, 0.1);
+    border: 1px solid rgba(174, 204, 255, 0.5);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.massageBox_innerBox{
+    width: 149px;
+    height: 132px;
+
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.massageBox_innerBox_header{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #11346F;
+}
+
+.massageBox_innerBox_paragraph{
+    width: 149px;
+    height: 60px;
+    
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    
+    text-align: center;
+    color: #262626;
+}
+
+.massageBox_line{
+    border: 1px solid #CEE2FF;
+    height: 117px;
+}
+
+.mainSection_btn{
+    width: 408px;
+    height: 63px;
+    margin-top: 52px;
+
+    background: #197AFF;
+    border-radius: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+
+.mainSection_btn span{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.mainSection_btn_secondary{
+    width: 255px;
+    height: 34px;
+    margin-top: 18px;
+    margin-left: 77px;
+
+    background: rgba(77, 145, 207, 0.15);
+    box-shadow: 0px 0px 14px #FFFFFF;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor:pointer;
+}
+
+.mainSection_btn_secondary span{
+    font-family:'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14px;
+    /* identical to box height, or 93% */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+#secodanryBtn_cost{
+    font-size: 15px;
+    font-weight: 700;
+    color: #197AFF;
+}
+
+/* მასაჟორის სურათი */
+#massager_img{
+    position: absolute;
+
+    width: 391px;
+    height: 241px;
+
+    right: 87px;
+    bottom:202px;
+}
+
+/* customer_review */ 
+.customer_review{
+    box-sizing: border-box;
+    position: absolute;
+
+    width: 393px;
+    height: 81px;
+    bottom: 34px;
+    right:82px;
+
+    padding-left: 11px;
+
+    background: rgba(234, 242, 255, 0.1);
+    border: 1px solid rgba(174, 204, 255, 0.5);
+    border-radius: 110px;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#avatar{
+    width: 64px;
+    height: 64px;   
+}
+.customer_review_inner_rigth{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.customer_review_inner_rigth_rate{
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+
+.customer_review_inner_rigth_comment{
+    width: 222px;
+    height: 34px;
+
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+
+    color: #000000;
+}
+
+.rate_stars{
+    display: flex;
+    gap: 5px;
+}
+
+.customer_name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+
+    color: #787979;
+}
+.rate_verified{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#VERIFIED{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: center;
+
+    /* Blue Primary */
+
+    color: #197AFF;
+}

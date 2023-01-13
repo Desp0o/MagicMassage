@@ -1,5 +1,6 @@
 /* მეორე სექცია */
 .SeconSection{
+    box-sizing: border-box;
     width: 100%;
     padding-top: 29px;
     padding-bottom: 54px;
@@ -46,6 +47,7 @@
 
 
 .cards_list{
+    box-sizing: border-box;
     width: 100%;
     padding-top: 50px;
 
@@ -70,10 +72,11 @@
 
 #cardMassager1{
     position: absolute;
-    width: 282px;
-    height: 106px;
+    
+    width: 133px;
+    height: 100px;
     top: -19px;
-    left: 41px;
+    left: 113px;
   
     margin: 0 auto;
 }

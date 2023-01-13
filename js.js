@@ -1,5 +1,8 @@
-let creditCardsBox = document.querySelector('.credit_cards')
+const creditCardsBox1 = document.getElementById('card1')
+const creditCardsBox2 = document.getElementById('card2')
+const creditCardsBox3 = document.getElementById('card3')
 
+// card images array
 const cardArray =[
     './images/creditCards/amex.png',
     './images/creditCards/apple.png',
@@ -10,17 +13,20 @@ const cardArray =[
     './images/creditCards/visa.png'
 ]
 
-window.onload = ()=> {
+// make card image div
+function makeCreditCardBox(cardbox){
     cardArray.forEach((card)=>{
-        
-
         const cardImg = document.createElement('img')
         cardImg.setAttribute('alt', 'credit card')
         cardImg.setAttribute('src', card)
 
-        creditCardsBox.appendChild(cardImg)
+        cardbox.appendChild(cardImg)
         console.log(cardImg);
     })
 }
 
-console.log(cardArray.length );
+window.onload = ()=> {
+    makeCreditCardBox(creditCardsBox1)
+    makeCreditCardBox(creditCardsBox2)
+    makeCreditCardBox(creditCardsBox3)
+}

@@ -63,8 +63,7 @@
     width: 368px;
     height: 530px;
 
-    background: #F6F8FC;
-    opacity: 0.7;
+    background: linear-gradient(180deg, #FFFFFF 0%, #D7E6FF 100%);;
 
     border: 1.5px solid #197AFF;
     border-radius: 18px;
@@ -231,4 +230,265 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+}
+
+/**********************************/
+
+#cardMassager2{
+    position: absolute;
+    top: -14px;
+    left: 78px;
+
+    width: 216px;
+    height: 100px;
+}
+
+#card_curved_arrow{
+    position: absolute;
+
+    top: 66px;
+    right: 34px;
+}
+
+.popular_badge{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 108px;
+    width: 126px;
+    height: 28px;
+
+    background: #57AC73;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popular_badge span{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.card2_p1{
+    position: relative;
+    width: fit-content;
+}
+
+.card2_p1{
+    width: 256px;
+    height: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+
+    color: #11346F;
+}
+
+#get1free{
+    font-family: 'Gilroy';
+    font-weight: 800;
+    color: #197AFF;
+}
+
+#get1free_underline{
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+
+.sale_text{
+    width: 280px;
+    height: 44px;
+
+    display: flex;
+    align-items: center ;
+    gap: 23px;
+
+    margin-top: 19px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sale_text span{
+    position: absolute;
+
+    right: 42px;
+    height: 2px;
+
+    width: 141px;
+    background-color: #647AA0;
+}
+
+.sale_text_p1{
+    width: 124px;
+    height: 43px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #11346F;
+}
+.sale_text_p2{
+    width: 124px;
+    height: 43px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 42px;
+
+    text-align: center;
+
+    color: #93A2BB;
+}
+
+.free_shipping{
+    margin-left: 58px;
+
+    width: 94px;
+    height: 16px;
+    
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    
+    color: #11346F;
+}
+
+.afterPay2{
+    margin-top: 11px;
+}
+
+.save_money_moneyback{
+    box-sizing: border-box;
+    position: relative;
+    width: 331px;
+    height: 83px;
+
+    margin: 17px auto 0 auto;
+
+    display: flex;
+
+    border: 1px solid #AECCFF;
+    border-radius: 19px;
+}
+
+.green_side{
+    position: absolute;
+    box-sizing: border-box;
+
+    top: -4px;
+    left: 0;
+    width: 158px;
+    height: 43px;
+
+    background: #BFF5BE;
+    border: 1px solid #99D298;
+    border-radius: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green_side p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #11346F;
+}
+
+.white_side{
+    position: absolute;
+    box-sizing: border-box;
+
+    top: -4px;
+    right: 0;
+
+    padding-right: 16px;
+
+    width: 271.31px;
+    height: 43px;
+
+    background: #F0F6FF;
+
+    border: 1px solid #AECCFF;
+    border-radius: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.white_side p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #11346F;
+}
+
+.save_money_moneyback > p{
+    position: absolute;
+    width: 206px;
+    height: 17px;
+
+    bottom: 14px;
+    left: 81px;
+
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 17px;
+
+    color: #11346F;
+}
+
+#cardMassager3{
+    position: absolute;
+
+    top: -17px;
+    left: 58px;
+
+    width: 258px;
+    height: 106px;  
+}
+
+#bestValue{
+    background: #AC5780;
+}
+
+#sendTime{
+    position: absolute;
+
+    bottom: 15px;
+    left: 60px;
 }

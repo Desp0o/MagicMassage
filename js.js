@@ -21,7 +21,6 @@ function makeCreditCardBox(cardbox){
         cardImg.setAttribute('src', card)
 
         cardbox.appendChild(cardImg)
-        console.log(cardImg);
     })
 }
 
@@ -30,3 +29,48 @@ window.onload = ()=> {
     makeCreditCardBox(creditCardsBox2)
     makeCreditCardBox(creditCardsBox3)
 }
+
+
+
+const Accordion = document.querySelectorAll('.accordionElement')
+const answer = document.querySelectorAll('.accordionElement1_answer')
+const arrow = document.querySelectorAll('.FAQ_arrow')
+
+
+
+answer[0].classList.add('accordionElement1_answer_active')
+arrow[0].classList.add('FAQ_arrow_active')
+
+Accordion.forEach(function(accordionItem){
+    console.log(accordionItem)
+    accordionItem.addEventListener('click', toggleAnswer)
+    accordionItem.addEventListener('click', toggleArrow)
+})
+
+function toggleArrow(e){
+    
+    arrow.forEach(function(arrow){
+        
+        if(arrow.parentElement === e.target){
+            
+            arrow.classList.toggle('FAQ_arrow_active')
+        }else{
+            arrow.classList.remove('FAQ_arrow_active')
+        }
+    })
+
+    
+}
+
+function toggleAnswer(e){
+    answer.forEach(function(contetn){
+
+        if(contetn.previousElementSibling === e.target){
+            
+            contetn.classList.toggle('accordionElement1_answer_active')
+        }else{
+            contetn.classList.remove('accordionElement1_answer_active')
+        }
+    })
+}
+

@@ -1,0 +1,162 @@
+.LastSection{
+    width: 100%;
+    padding-top: 34px;
+    padding-bottom: 69px;
+
+    background: #11346F;
+}
+
+.lastSection_inner{
+    box-sizing: border-box;
+    width: 100%;
+
+    padding-left: 100px;
+    padding-right: 128px;
+}
+
+.lastSection_inner_p1{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+
+.lastSection_inner_p1 p{
+    width: 544px;
+    height: 50px;
+
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 49px;
+
+    color: #FFFFFF;
+}
+
+#question{
+    font-family: 'Gilroy';
+}
+
+#Frequently_underline{
+    position: absolute;
+    right: 0;
+}
+
+.FAQ{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 65px;
+
+    display: flex;
+    gap: 84px;
+}
+
+.FAQ img{
+    width: 476px;
+    height: 398px;
+}
+
+.accordion{
+    position: relative;
+    box-sizing: border-box;
+    width: 652px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: all 0.4s ease;
+}
+
+.accordionElement{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    border: 1px solid #31548E;
+    border-radius: 9px;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.accordionElement1_question{
+    box-sizing: border-box;
+    width: 652px;
+    height: 59px;
+    background: #194081;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 30px;
+    padding-right: 40px;
+
+}
+
+.accordionElement1_question p{
+
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.accordionElement1_answer{
+    overflow: hidden;
+    height: 0;
+    padding: 0px 30px 0px 30px;
+    transition: all 0.4s ease-out;
+}
+
+.accordionElement1_answer_active{
+    height: fit-content;
+    padding: 22px 30px 19px 30px;
+    transition: all 0.4s ease-out;
+}
+
+.accordionElement1_answer p{
+    width: 518px;
+    height: 27px;
+    
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #AECCFF;
+}
+
+.FAQ_arrow{
+    transform: rotate(0deg);
+
+    transition: all 0.4s ease;
+}
+
+.FAQ_arrow_active{
+    transform: rotate(180deg);
+}
+
+.seeMore_FAQ{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.seeMore_FAQ p{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #F6F8FC;
+}
+
+.seeMore_FAQ svg{
+    transform: rotate(180deg);
+}

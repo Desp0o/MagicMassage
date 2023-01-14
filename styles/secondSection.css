@@ -10,8 +10,7 @@
 
 /* პირველი ტექსტი */
 .buy_more{
-    width: 425px;
-    height: 49px;
+    width: fit-content;
 
     margin: 0 auto; 
 
@@ -33,8 +32,6 @@
 }
 
 .limiter_offer{
-    width: 360px;
-    height: 50px;
 
     font-family: 'Mont';
     font-style: normal;
@@ -81,12 +78,10 @@
 }
 
 .card1_p1{
+    text-align: center;
     margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
-
-    width: 304px;
-    height: 37px;
 
     font-family: 'Mont';
     font-style: normal;
@@ -97,9 +92,6 @@
 }
 
 .card1_p2{
-    width: 124px;
-    height: 43px;
-
     margin-top: 17px;
     margin-left: auto;
     margin-right: auto;
@@ -121,9 +113,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    width: 94px;
-    height: 16px;
-
+    text-align: center;
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 700;
@@ -166,7 +156,7 @@
     font-family: 'Mont';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 16px;
 
     text-transform: capitalize;
@@ -282,9 +272,6 @@
 }
 
 .card2_p1{
-    width: 256px;
-    height: 40px;
-
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -311,9 +298,7 @@
 }
 
 .sale_text{
-    width: 280px;
-    height: 44px;
-
+    width: fit-content;
     display: flex;
     align-items: center ;
     gap: 23px;
@@ -328,14 +313,12 @@
 
     right: 42px;
     height: 2px;
-
     width: 141px;
+    
     background-color: #647AA0;
 }
 
 .sale_text_p1{
-    width: 124px;
-    height: 43px;
 
     font-family: 'Gilroy';
     font-style: normal;
@@ -347,9 +330,6 @@
     color: #11346F;
 }
 .sale_text_p2{
-    width: 124px;
-    height: 43px;
-
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 800;
@@ -363,9 +343,6 @@
 
 .free_shipping{
     margin-left: 58px;
-
-    width: 94px;
-    height: 16px;
     
     font-family: 'Gilroy';
     font-style: normal;
@@ -457,8 +434,6 @@
 
 .save_money_moneyback > p{
     position: absolute;
-    width: 206px;
-    height: 17px;
 
     bottom: 14px;
     left: 81px;
@@ -477,7 +452,6 @@
 
     top: -17px;
     left: 58px;
-
     width: 258px;
     height: 106px;  
 }

@@ -17,7 +17,6 @@
 }
 
 .mainSection_header p{
-    width: 911px;
     height: 57px;
     font-family: 'Mont';
     font-style: normal;
@@ -53,7 +52,6 @@
 .mainSection_paragraph{
     margin-top: 25px;
     width: 731px;
-    height: 67px;
 
     font-family: 'Mont';
     font-style: normal;
@@ -105,9 +103,6 @@
 }
 
 .massageBox_innerBox_paragraph{
-    width: 149px;
-    height: 60px;
-    
     font-family: 'Mont';
     font-style: normal;
     font-weight: 600;

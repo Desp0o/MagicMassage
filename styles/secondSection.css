@@ -6,6 +6,8 @@
     padding-bottom: 54px;
 
     background: linear-gradient(118.72deg, #AECCFF -18.14%, #197AFF 165.34%);
+
+    overflow: hidden;
 }
 
 /* პირველი ტექსტი */
@@ -465,4 +467,84 @@
 
     bottom: 15px;
     left: 60px;
+}
+
+
+@media (max-width:769px) {
+    .cards_list{
+        box-sizing: border-box;
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .buy_more{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 39px;
+        text-align: center;
+    }
+    .limiter_offer{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 39px;
+    }  
+    .card{
+        width: 378px;
+        height: 495px;
+        max-width: 99.9%;
+    }
+    .save_money_moneyback{
+        width: 342px;
+        height: 77px;
+    }
+    .free_shipping,
+    .card1_p3{
+        display: none;
+    }
+    .white_side img{
+        display: none;
+    }
+    .white_side{
+        width: 280.33px;
+        height: 36px;
+    }
+    .green_side{
+        width: 180.2px;
+        height: 36px;
+    }
+    .credit_cards{
+        bottom: 19px;
+    }
+    .card_button{
+        width: 353px;
+        height: 48px;
+    
+        bottom: 51px;
+        left: 12px;
+    }
+    #card1Responsive{
+        width: 378px;
+        height: 387px;
+    }
+    #cardMassager1{
+        top:27px
+    }
+    .moneyBack_checkMark{
+        display: none;
+    }
+    #afterPay_Card1{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:400px) {
+    .card_button{
+        width: 331px;
+        height: 48px;
+    
+        bottom: 51px;
+        left: 12px;
+    }
 }

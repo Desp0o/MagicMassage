@@ -24,6 +24,7 @@ body{
 
 /* ნავიგაცია */
 .navbar{
+    overflow-x: hidden;
     position: fixed;
     z-index: 5;
 
@@ -161,3 +162,42 @@ body{
 }
 
 
+
+
+@media (max-width:769px) {
+    .navbarLinks{
+        display: none;
+    }
+    .navbarBtn{
+        display: none;
+    }
+    .navbar{
+        height: 91px;
+    }
+    .navbarMenu{
+        justify-content: center;
+        height: 52px;
+        padding: 0px 0px;
+    }
+    #moneyBackBlock{
+        display: none;
+    }
+    .navbarLogo svg{
+        width: 146.24px;
+        height: 22px;
+    }
+    .service_block{
+        flex-direction: column;
+        gap: 7px;
+    }
+    .service_block p{
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .icon_circle{
+        width: 36px;
+        height: 36px;
+    }
+}

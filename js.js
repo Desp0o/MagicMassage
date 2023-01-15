@@ -31,46 +31,50 @@ window.onload = ()=> {
 }
 
 
-
-const Accordion = document.querySelectorAll('.accordionElement')
+const accordion = document.querySelectorAll('.accordionElement')
 const answer = document.querySelectorAll('.accordionElement1_answer')
 const arrow = document.querySelectorAll('.FAQ_arrow')
+
 
 
 
 answer[0].classList.add('accordionElement1_answer_active')
 arrow[0].classList.add('FAQ_arrow_active')
 
-Accordion.forEach(function(accordionItem){
-    console.log(accordionItem)
-    accordionItem.addEventListener('click', toggleAnswer)
-    accordionItem.addEventListener('click', toggleArrow)
-})
 
-function toggleArrow(e){
-    
-    arrow.forEach(function(arrow){
-        
-        if(arrow.parentElement === e.target){
-            
-            arrow.classList.toggle('FAQ_arrow_active')
-        }else{
-            arrow.classList.remove('FAQ_arrow_active')
-        }
-    })
 
-    
+accordion.forEach((accordions) => {
+    accordions.addEventListener("click", () => {
+
+      if (!accordions.lastElementChild.classList.contains("accordionElement1_answer_active")) {
+            accordion.forEach((a) => a.lastElementChild.classList.remove("accordionElement1_answer_active"));
+            accordions.lastElementChild.classList.add("accordionElement1_answer_active");
+      } else {
+        accordions.lastElementChild.classList.remove("accordionElement1_answer_active");
+      }
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+// ტექსტის ცვლილება
+if(window.innerWidth < 769){
+    document.getElementById('service_block_txt1').innerHTML = 'FREE 2-DAY USA SHIPPING'
+    document.getElementById('service_block_txt3').innerHTML = '100% MONEY-BACK GUARANTEE'
 }
 
-function toggleAnswer(e){
-    answer.forEach(function(contetn){
 
-        if(contetn.previousElementSibling === e.target){
-            
-            contetn.classList.toggle('accordionElement1_answer_active')
-        }else{
-            contetn.classList.remove('accordionElement1_answer_active')
-        }
-    })
-}
+
+
+
+
 

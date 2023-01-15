@@ -4,6 +4,8 @@
     padding-bottom: 69px;
 
     background: #11346F;
+
+    overflow: hidden;
 }
 
 .lastSection_inner{
@@ -21,8 +23,6 @@
 }
 
 .lastSection_inner_p1 p{
-    width: 544px;
-    height: 50px;
 
     font-family: 'Mont';
     font-style: normal;
@@ -74,7 +74,7 @@
     border: 1px solid #31548E;
     border-radius: 9px;
     overflow: hidden;
-
+    
     cursor: pointer;
 }
 
@@ -94,7 +94,6 @@
 }
 
 .accordionElement1_question p{
-
     font-family: 'Mont';
     font-style: normal;
     font-weight: 700;
@@ -108,10 +107,11 @@
     height: 0;
     padding: 0px 30px 0px 30px;
     transition: all 0.4s ease-out;
+    display: flex;
+    align-items: center;
 }
 
 .accordionElement1_answer_active{
-    height: fit-content;
     padding: 22px 30px 19px 30px;
     transition: all 0.4s ease-out;
 }
@@ -159,4 +159,72 @@
 
 .seeMore_FAQ svg{
     transform: rotate(180deg);
+}
+
+@media (max-width:769px) {
+    .FAQ{
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .lastSection_inner{
+        box-sizing: border-box;
+    
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+    .FAQ img{
+        width: 374px;
+        height: 194px;
+        max-width: 100%;
+
+        object-fit: cover;
+        object-position: top;
+    }
+    .accordion{
+        box-sizing: content-box;
+        width: 378px;
+        max-width: 100%; 
+        padding-bottom: 25px;
+    }
+    .accordionElement{
+        max-width: 100%;
+    }
+    .accordionElement1_question{
+        width: 378px;
+        max-width: 100%;
+        height: 59px;
+    
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .accordionElement1_answer p{
+        width: 378px;
+        max-width: 100%;
+        height: 59px;
+    }
+    .lastSection_inner_p1 p{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 47px;
+
+        text-align: center;
+    }
+
+    #Frequently_underline{
+        width: 131px;
+        height: 4px;
+        left: 122px;
+    }
+
+    .accordionElement1_answer_active{
+        padding: 42px 30px 39px 30px;
+        transition: all 0.4s ease-out;
+    }
+    .seeMore_FAQ{
+        left: 50%;
+        transform: translateX(-50%);
+
+        bottom: -25px;
+    }
 }

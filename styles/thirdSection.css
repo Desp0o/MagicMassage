@@ -3,9 +3,12 @@
 
     padding-top: 43px;
     padding-bottom: 62px;
+
+    overflow: hidden;
 }
 
 .thirdSection_inner{
+    position: relative;
     box-sizing: border-box;
     width: 100%;
     padding-left: 102px;
@@ -108,11 +111,16 @@
 }
 
 .customers_block{
-    width: 100%;
     margin-top: 23px;
-
+    overflow: hidden;
+    width: 100%;
+}
+.customers_block_inner{
+    width: 100%;
     display: flex;
     gap: 30px;
+    left: 0;
+    top: 0;
 }
 
 .customer_card{
@@ -191,4 +199,90 @@
     font-size: 13px;
     line-height: 24px;
     color: #262626;
+}
+
+.pagination{
+    width: 100%;
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+@media (max-width:769px) {
+    .ThirdSection{
+        padding-top: 28px;
+        padding-bottom: 31px;
+    }
+    .thirdSection_p1 p{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .thirdSection_inner{
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    #thirdSection_p1_underline{
+        width: 165px;
+        height: 6px;
+        left: 125px;
+    }
+    .total_reviews{
+        flex-direction: column;
+    }
+    .write_review{
+        height: 40px;
+    }
+    .customers_block{
+        position: relative;
+    }
+    .customer_card{
+        width: 285px;
+    }
+    .customers_block_inner{
+        width: 300%;
+        height: 100%;
+        gap: 13px;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+    .customer_card > p{
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 26px;
+        padding-right: 8px;
+    }
+    .pagination_dots{
+        height: 14px;
+        width: 14px;
+    
+        border-radius: 50%;
+        background-color: #CBCED6;
+    }
+    
+    .pagination_dot_active{
+        background-color: #197AFF;
+    }
+}
+
+@media (max-width:400px){
+    .thirdSection_p1 p{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+    }
+    #thirdSection_p1_underline{
+        width: 200px;
+        height: 6px;
+        left: 85px;
+    }
 }

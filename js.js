@@ -57,15 +57,6 @@ accordion.forEach((accordions) => {
 
 
 
-
-
-
-
-
-
-
-
-
 // ტექსტის ცვლილება
 if(window.innerWidth < 769){
     document.getElementById('service_block_txt1').innerHTML = 'FREE 2-DAY USA SHIPPING'
@@ -74,7 +65,33 @@ if(window.innerWidth < 769){
 
 
 
+//////////////////////////////////
+const slider = document.querySelector('.customers_block')
+let startX = 0
+let pressed = false
 
+slider.addEventListener('mousedown', function(e){
+  pressed = true
+  startX =  e.clientX
 
+  console.log(startX);
+})
 
+window.addEventListener('mouseup',function(e){
+  pressed = false
 
+})
+
+slider.addEventListener('mouseleave', function(e){
+  pressed = false
+
+  console.log(pressed);
+})
+
+slider.addEventListener('mousemove', function(e){
+  if(!pressed){
+    return
+  }
+
+  wrapper.scrollLeft += startX - e.clientX
+})
